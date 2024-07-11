@@ -1,4 +1,7 @@
 # [bug] WebviewWindow freezes/loads infinite on creation inside js if tauri-plugin-devtools are inside Cargo.toml
+
+[Issue #10256](https://github.com/tauri-apps/tauri/issues/10256)
+
 i try to create a new WebviewWindow from JS Code but every time it just loads infinite and i need to force quit the Program.
 
 I figured out that it has something to do with the `tauri-plugin-devtools`. If i remove it from the Cargo.toml it works.
